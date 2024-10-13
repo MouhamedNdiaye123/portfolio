@@ -105,7 +105,7 @@ header{
     flex-direction: column;
     
     min-height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.599), rgba(0, 0, 0, 0.566)),no-repeat center / cover url(./images/me-removebg-preview.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.707), rgba(0, 0, 0, 0.795)),no-repeat center / cover url(./images/me-removebg-preview.png);
     background-attachment: fixed;
     object-fit: contain;
     background-position: left;
@@ -149,14 +149,19 @@ header{
 
 /* skills style */
 
-.skills-content{
+.skills-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0 40px; */
-    gap: 60px;
-    animation: anime-icon 20s linear infinite;
+    overflow: hidden;
 }
+
+.skills-content-inner {
+    display: flex;
+    gap: 40px;
+    animation: anime-icon 10s linear infinite;
+}
+
 @keyframes anime-icon {
     0% {
         transform: translateX(100%);
