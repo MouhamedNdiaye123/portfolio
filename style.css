@@ -103,10 +103,12 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* text-align: center; */
+    
     min-height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.445)),no-repeat center / cover url(./images/bg-home.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.599), rgba(0, 0, 0, 0.566)),no-repeat center / cover url(./images/me-removebg-preview.png);
     background-attachment: fixed;
+    object-fit: contain;
+    background-position: left;
 }
 
 .home-content h2{
@@ -151,8 +153,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px;
-    animation: anime-icon 15s linear infinite;
+    /* margin: 0 40px; */
+    gap: 60px;
+    animation: anime-icon 20s linear infinite;
 }
 @keyframes anime-icon {
     0% {
